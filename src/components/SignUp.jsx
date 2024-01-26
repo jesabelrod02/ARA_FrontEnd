@@ -66,7 +66,7 @@ const Signup = () => {
         />
         <button type="submit">Sign Up</button>
       </form>
-      <Link to="/signin">Already have an account? Sign In</Link>
+      <Link to="/SolutionsPage"> Already have an account? Sign In</Link>
     </div>
   );
 };
