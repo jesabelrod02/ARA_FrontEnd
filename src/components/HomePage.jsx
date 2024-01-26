@@ -10,14 +10,11 @@ const HomePage = () => {
             <NavLink to="/">Inicio</NavLink>
           </li>
           <li>
-            <NavLink to="/SolutionsPage">Busco Soluciones</NavLink>
+            <NavLink to="/SolutionsPage"> Busco Soluciones</NavLink>
           </li>
           {/* ... Otros elementos ... */}
         </ul>
       </nav>
-      <div className="cta-button">
-        <NavLink to="/solutions">Busco Soluciones</NavLink>
-      </div>
     </div>
   );
 };
