@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const HomePage = () => {
   return (
@@ -7,24 +7,16 @@ const HomePage = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Inicio</Link>
+            <NavLink to="/">Inicio</NavLink>
           </li>
           <li>
-            <Link to="/SolutionsPage">Busco Soluciones</Link>
+            <NavLink to="/SolutionsPage">Busco Soluciones</NavLink>
           </li>
-          <li>
-            <Link to="/ContributePage">Brindo Soluciones</Link>
-          </li>
-          <li>
-            <Link to="/AboutPage">Nosotros</Link>
-          </li>
-          <li>
-            <Link to="/BlogPage">Blog</Link>
-          </li>
+          {/* ... Otros elementos ... */}
         </ul>
       </nav>
       <div className="cta-button">
-        <Link to="/solutions">Busco Soluciones</Link>
+        <NavLink to="/solutions">Busco Soluciones</NavLink>
       </div>
     </div>
   );
