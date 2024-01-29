@@ -32,36 +32,36 @@ const NavBar = () => {
         <div className="flex items-center space-x-4 ml-auto">
           {/* Navegación */}
           <nav className="flex space-x-4">
-          <NavLink
-                to="/"
-                className="text-gray-700 hover:text-blue-500 transition duration-300"
-              >
-                Inicio
-              </NavLink>
-              <NavLink
-                to="/SolutionsPage"
-                className="text-gray-700 hover:text-blue-500 transition duration-300"
-              >
-                Busco Soluciones
-              </NavLink>
-              <NavLink
-                to="/ContibutePage"
-                className="text-gray-700 hover:text-blue-500 transition duration-300"
-              >
-                Brindo Soluciones 
-              </NavLink>
-              <NavLink
-                to="/AboutPage"
-                className="text-gray-700 hover:text-blue-500 transition duration-300"
-              >
-                Nosotros
-              </NavLink>
-              <NavLink
-                to="/BlogPage"
-                className="text-gray-700 hover:text-blue-500 transition duration-300"
-              >
-                Blog 
-              </NavLink>
+            <NavLink
+              to="/"
+              className="text-gray-700 hover:text-blue-500 transition duration-300"
+            >
+              Inicio
+            </NavLink>
+            <NavLink
+              to="/SolutionsPage"
+              className="text-gray-700 hover:text-blue-500 transition duration-300"
+            >
+              Busco Soluciones
+            </NavLink>
+            <NavLink
+              to="/ContibutePage"
+              className="text-gray-700 hover:text-blue-500 transition duration-300"
+            >
+              Brindo Soluciones
+            </NavLink>
+            <NavLink
+              to="/AboutPage"
+              className="text-gray-700 hover:text-blue-500 transition duration-300"
+            >
+              Nosotros
+            </NavLink>
+            <NavLink
+              to="/BlogPage"
+              className="text-gray-700 hover:text-blue-500 transition duration-300"
+            >
+              Blog
+            </NavLink>
             {/* ... (otros enlaces) */}
           </nav>
 
@@ -74,20 +74,33 @@ const NavBar = () => {
 
       {/* Contenedor inferior con carrusel */}
       <div className="flex-grow p-4">
-        <Slider {...sliderSettings} className="h-96 w-full"> {/* Ajusta la altura según sea necesario */}
-          <div>
-            <img src={Image} alt="Image 3" />
-          </div>
-          <div>
-            <img src={Image2} alt="Image 2" />
-          </div>
-          <div>
-            <img src={Image3} alt="Image 3" />
-          </div>
-          {/* Agrega más elementos según sea necesario */}
-        </Slider>
-      </div>
+  <Slider {...sliderSettings} className="h-96 w-full flex items-center justify-center"> {/* Ajusta la altura según sea necesario */}
+    <div className="text-center">
+      <img
+        src={Image3}
+        alt="Image 1"
+        className="inline-block object-cover h-96 w-full max-w-full"
+      />
     </div>
+    <div className="text-center">
+      <img
+        src={Image3}
+        alt="Image 2"
+        className="inline-block object-cover h-96 w-full max-w-full "
+      />
+    </div>
+    <div className="text-center">
+      <img
+        src={Image3}
+        alt="Image 3"
+        className="inline-block object-cover h-96 w-full max-w-full "
+      />
+    </div>
+    {/* Agrega más elementos según sea necesario */}
+  </Slider>
+</div>
+
+      </div>
   );
 };
 
