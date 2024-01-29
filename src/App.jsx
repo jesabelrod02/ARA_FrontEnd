@@ -5,6 +5,7 @@ import './index.css';
 import HomePage from './components/HomePage';
 import SolutionsPage from './components/SolutionsPage';
 import SignUp from './components/SignUp';
+import ResetPassword from './components/ResetPassword';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/SolutionsPage" element={<SolutionsPage />} />
           <Route path="/SignUp" element={<SignUp />}  />
+          <Route path="/ResetPassword" element={<ResetPassword />} />
           {/* ... Otras rutas ... */}
         </Routes>
       </Router>
